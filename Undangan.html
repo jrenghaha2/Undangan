@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Undangan Pernikahan – Rasen & Dhela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6fbf9;
+      --ink:#102a27;
+      --muted:#40625d;
+      --card:#ffffff;
+      --soft:#e5f3ef;
+      --green:#2f9e74;
+      --teal:#0fb8ad;
+      --grad: linear-gradient(135deg, var(--green), var(--teal));
+      --shadow: 0 10px 40px rgba(16,42,39,.12);
+      --radius:22px;
+      --radius-sm:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial; line-height:1.65}
+    .wrap{max-width:780px;margin:auto;padding:clamp(14px,4vw,28px)}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;border:1px solid #e9efec}
+    /* HERO */
+    .hero{position:relative;overflow:hidden;color:#fff;background:var(--grad);padding:38px 22px 28px;text-align:center}
+    .hero .tag{opacity:.9;letter-spacing:.12em;text-transform:uppercase;font-size:.85rem}
+    .hero h1{font-family:"Playfair Display", Georgia, "Times New Roman", serif;font-size:clamp(36px,7.6vw,56px);line-height:1.08;margin:.35rem auto .1rem; font-weight:700}
+    .hero .amp{color:#d8fffb; text-shadow:0 1px 0 rgba(0,0,0,.1)}
+    .hero p{margin:.35rem 0 .15rem;opacity:.95}
+    .leaf-bg{position:absolute;inset:0;pointer-events:none;opacity:.12;background:radial-gradient(120px 80px at 10% 110%, #fff, transparent 60%),radial-gradient(160px 120px at 90% -10%, #fff, transparent 60%)}
+    /* CONTENT */
+    .section{padding:22px 22px}
+    .verse{font-style:italic;color:#2c4945;background:var(--soft);border:1px dashed #cfe9e1;padding:14px 16px;border-radius:var(--radius-sm)}
+    h2{margin:.25rem 0 .6rem;font-size:1.05rem;letter-spacing:.02em;color:var(--green)}
+    /* DETAILS */
+    .names{font-family:"Playfair Display", Georgia, serif;font-size:clamp(22px,5.2vw,28px);margin:0 0 8px;text-align:center}
+    .pair{font-weight:700}
+    .when{margin:8px 0 18px;text-align:center}
+    .loc-title{text-align:center;font-family:"Playfair Display", Georgia, serif;color:var(--green);font-size:1.3rem;margin:12px 0 6px}
+    .address{text-align:center;margin:0 auto;max-width:520px}
+    /* FOOTER */
+    .footer{padding:26px 22px;text-align:center;background:radial-gradient(140px 120px at -5% 100%, rgba(21,184,166,.18), transparent 50%),radial-gradient(180px 120px at 105% 100%, rgba(47,158,116,.18), transparent 50%)}
+    .sig{font-weight:700}
+    .muted{color:var(--muted)}
+    .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+    .btn{appearance:none;border:none;border-radius:999px;padding:12px 20px;background:var(--grad);color:#fff;font-weight:700;text-decoration:none;box-shadow:0 6px 22px rgba(21,184,166,.28)}
+    .btn:active{transform:translateY(1px)}
+    /* PRINT */
+    @media print{
+      body{background:#fff}
+      .wrap{padding:0}
+      .card{box-shadow:none;border:1px solid #e3eee9}
+      .btns{display:none}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card" aria-label="Undangan Pernikahan Rasen dan Dhela">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="leaf-bg"></div>
+        <div class="tag">UNDANGAN PERNIKAHAN</div>
+        <h1>Rasen <span class="amp">&amp;</span> Dhela</h1>
+        <p>Bersama keluarga, kami mengundang Anda untuk hadir</p>
+      </section>
+
+      <!-- VERSE -->
+      <section class="section">
+        <h2>Bismillāhirraḥmānirraḥīm</h2>
+        <p class="verse">“Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan
+          untukmu pasangan hidup dari jenismu sendiri, supaya kamu memperoleh
+          ketenangan hati, dan Dia menjadikan kasih sayang di antara kamu.
+          <b>Sesungguhnya</b> yang demikian itu benar-benar terdapat tanda-tanda <b>bagi</b> kaum yang berpikir.”</p>
+        <p class="muted" style="margin-top:8px">(Q.S. Ar-Rūm [30]: 21)</p>
+      </section>
+
+      <!-- DETAILS -->
+      <section class="section">
+        <p class="names"><span class="pair">Azis Rasendria</span> <span class="amp">&amp;</span> <span class="pair">Dhela Meilina</span></p>
+        <p class="when"><b>Hari/Tanggal :</b> Jumat, 10 Oktober 2025</p>
+
+        <h3 class="loc-title">Lokasi</h3>
+        <p class="address">
+          Kp. Nambo No. 30 RT 06 RW 02<br>
+          Desa Batukarut, Kecamatan Arjasari<br>
+          Kabupaten Bandung, Jawa Barat 40379
+        </p>
+      </section>
+
+      <!-- FOOTER -->
+      <section class="footer">
+        <p class="sig">Hormat kami,<br> Keluarga Besar Azis &amp; Dhela</p>
+        <p class="muted">“Doa dan restu Anda adalah <b>hadiah terindah</b> bagi kami.”</p>
+        <div class="btns" role="group" aria-label="Tombol Aksi">
+          <a class="btn" href="https://maps.app.goo.gl/LrL5fuNwkN29deyN6" aria-label="Buka peta lokasi">Buka Peta</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Terima kasih atas doa & kehadirannya.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
